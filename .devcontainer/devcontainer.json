@@ -1,19 +1,20 @@
 // Update the VARIANT arg in docker-compose.yml to pick a Python version
 {
-	"name": "Python 3 & PostgreSQL",
-	"dockerComposeFile": "docker-compose.yml",
+	"name": "Python 3",
 	"service": "app",
+	"dockerComposeFile": "docker-compose.yml",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or the host.
-	 "forwardPorts": [5000],
+	 //"forwardPorts": [5000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install --user -r requirements.txt"
+	//"postCreateCommand": "pip install --user -r requirements.txt"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
